@@ -5,7 +5,7 @@ namespace Nerva.Rpc.Daemon
 {
     public class GetBlockCount : Request<object, uint>
     {
-        public GetBlockCount(Action<uint> completeAction, Action<RequestError> failedAction, uint port = 17566)
+        public GetBlockCount(Action<uint> completeAction, Action<RequestError> failedAction, uint port = 13895)
             : base (null, completeAction, failedAction, port) { }
 
         protected override bool DoRequest(out uint result)

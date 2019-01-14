@@ -5,7 +5,7 @@ namespace Nerva.Rpc.Wallet
 {
     public class GetTransferByTxID : Request<GetTransferByTxIDRequestData, GetTransferByTxIDResponseData>
     {
-        public GetTransferByTxID(GetTransferByTxIDRequestData rpcData, Action<GetTransferByTxIDResponseData> completeAction, Action<RequestError> failedAction, uint port = 17566)
+        public GetTransferByTxID(GetTransferByTxIDRequestData rpcData, Action<GetTransferByTxIDResponseData> completeAction, Action<RequestError> failedAction, uint port = 13895)
             : base (rpcData, completeAction, failedAction, port) { }
             
         protected override bool DoRequest(out GetTransferByTxIDResponseData result)

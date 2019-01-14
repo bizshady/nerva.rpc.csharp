@@ -7,7 +7,7 @@ namespace Nerva.Rpc.Wallet
 {
     public class CreateAccount : Request<CreateAccountRequestData, CreateAccountResponseData>
     {
-        public CreateAccount(CreateAccountRequestData rpcData, Action<CreateAccountResponseData> completeAction, Action<RequestError> failedAction, uint port = 17566)
+        public CreateAccount(CreateAccountRequestData rpcData, Action<CreateAccountResponseData> completeAction, Action<RequestError> failedAction, uint port = 13895)
             : base (rpcData, completeAction, failedAction, port) { }
             
         protected override bool DoRequest(out CreateAccountResponseData result)

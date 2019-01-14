@@ -6,7 +6,7 @@ namespace Nerva.Rpc.Daemon
 {
     public class GetBlockHeaderByHash : Request<GetBlockHeaderByHashRequestData, BlockHeaderResponseData>
     {
-        public GetBlockHeaderByHash(GetBlockHeaderByHashRequestData rpcData, Action<BlockHeaderResponseData> completeAction, Action<RequestError> failedAction, uint port = 17566)
+        public GetBlockHeaderByHash(GetBlockHeaderByHashRequestData rpcData, Action<BlockHeaderResponseData> completeAction, Action<RequestError> failedAction, uint port = 13895)
             : base (rpcData, completeAction, failedAction, port) { }
 
         protected override bool DoRequest(out BlockHeaderResponseData result)

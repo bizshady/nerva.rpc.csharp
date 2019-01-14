@@ -6,7 +6,7 @@ namespace Nerva.Rpc.Daemon
 {
     public class SetBans : Request<SetBansRequestData, string>
     {
-        public SetBans(SetBansRequestData rpcData, Action<string> completeAction, Action<RequestError> failedAction, uint port = 17566)
+        public SetBans(SetBansRequestData rpcData, Action<string> completeAction, Action<RequestError> failedAction, uint port = 13895)
             : base (rpcData, completeAction, failedAction, port) { }
             
         protected override bool DoRequest(out string result)

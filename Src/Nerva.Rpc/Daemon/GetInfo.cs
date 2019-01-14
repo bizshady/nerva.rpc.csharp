@@ -6,7 +6,7 @@ namespace Nerva.Rpc.Daemon
 {
     public class GetInfo : Request<object, GetInfoResponseData>
     {
-        public GetInfo(Action<GetInfoResponseData> completeAction, Action<RequestError> failedAction, uint port = 17566)
+        public GetInfo(Action<GetInfoResponseData> completeAction, Action<RequestError> failedAction, uint port = 13895)
             : base (null, completeAction, failedAction, port) { }
 
         protected override bool DoRequest(out GetInfoResponseData result)

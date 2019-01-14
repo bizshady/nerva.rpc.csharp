@@ -5,7 +5,7 @@ namespace Nerva.Rpc.Wallet
 {
     public class MakeIntegratedAddress : Request<MakeIntegratedAddressRequestData, MakeIntegratedAddressResponseData>
     {
-        public MakeIntegratedAddress(MakeIntegratedAddressRequestData rpcData, Action<MakeIntegratedAddressResponseData> completeAction, Action<RequestError> failedAction, uint port = 17566)
+        public MakeIntegratedAddress(MakeIntegratedAddressRequestData rpcData, Action<MakeIntegratedAddressResponseData> completeAction, Action<RequestError> failedAction, uint port = 13895)
             : base (rpcData, completeAction, failedAction, port) { }
             
         protected override bool DoRequest(out MakeIntegratedAddressResponseData result)

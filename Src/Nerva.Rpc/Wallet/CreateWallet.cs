@@ -5,7 +5,7 @@ namespace Nerva.Rpc.Wallet
 {
     public class CreateWallet : Request<CreateWalletRequestData, string>
     {
-        public CreateWallet(CreateWalletRequestData rpcData, Action<string> completeAction, Action<RequestError> failedAction, uint port = 17566)
+        public CreateWallet(CreateWalletRequestData rpcData, Action<string> completeAction, Action<RequestError> failedAction, uint port = 13895)
             : base (rpcData, completeAction, failedAction, port) { }
             
         protected override bool DoRequest(out string result) => JsonRpcRequest("create_wallet", rpcData, out result);
