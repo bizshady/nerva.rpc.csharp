@@ -6,7 +6,7 @@ namespace Nerva.Rpc.Wallet
 {
     public class GetTransfers : Request<GetTransfersRequestData, GetTransfersResponseData>
     {
-        public GetTransfers(GetTransfersRequestData rpcData, Action<GetTransfersResponseData> completeAction, Action<RequestError> failedAction, uint port = 17566)
+        public GetTransfers(GetTransfersRequestData rpcData, Action<GetTransfersResponseData> completeAction, Action<RequestError> failedAction, uint port = 13895)
             : base (rpcData, completeAction, failedAction, port) { }
             
         protected override bool DoRequest(out GetTransfersResponseData result)

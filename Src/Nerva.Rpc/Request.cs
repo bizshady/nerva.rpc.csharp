@@ -17,7 +17,7 @@ namespace Nerva.Rpc
         protected Action<T_Resp> completeAction;
         protected Action<RequestError> failedAction;
 
-        public Request(T_Req rpcData, Action<T_Resp> completeAction, Action<RequestError> failedAction, uint port = 17566)
+        public Request(T_Req rpcData, Action<T_Resp> completeAction, Action<RequestError> failedAction, uint port = 13895)
         {
             error = new RequestError();
             this.port = port;
